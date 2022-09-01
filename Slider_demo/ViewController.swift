@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var bottomLabel: UILabel!
     @IBOutlet weak var currentValue: UILabel!
     
+    @IBOutlet weak var noVibrationSlider: UISlider!
+    
     var currentValueString: String = "light"
     var controlBool: Bool = true
     var bottomControlBool: Bool = true
@@ -68,7 +70,10 @@ class ViewController: UIViewController {
             changeVibration(value: currentValueString)
             bottomControlBool = false
         }
-        
+    }
+    
+    @IBAction func noVibrationAction(_ sender: UISlider) {
+        bottomLabel.text = Int(sender.value).description
     }
     
     

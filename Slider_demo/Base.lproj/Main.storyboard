@@ -112,11 +112,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="hMw-jM-qtm">
+                                <rect key="frame" x="55" y="525.5" width="304" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OdY-iW-iyh"/>
+                                    <constraint firstAttribute="width" constant="300" id="t2v-y9-Z0G"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.31323839250000002" green="0.34910990749999998" blue="0.45080943940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="maximumTrackTintColor" systemColor="systemTealColor"/>
+                                <connections>
+                                    <action selector="noVibrationAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="DP4-23-Gl4"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hMw-jM-qtm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ES-8l-hFc"/>
                             <constraint firstItem="Vm4-AS-VJU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CmG-IE-i7o"/>
+                            <constraint firstItem="hMw-jM-qtm" firstAttribute="top" secondItem="hrY-YF-Zy6" secondAttribute="bottom" constant="15" id="Cxp-0T-y3n"/>
                             <constraint firstItem="hrY-YF-Zy6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Io8-qP-gFc"/>
                             <constraint firstItem="tMh-am-7oY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mgp-he-R1l"/>
                             <constraint firstItem="Vm4-AS-VJU" firstAttribute="top" secondItem="V1C-sM-qSW" secondAttribute="bottom" constant="33" id="NNS-Da-Ic6"/>
@@ -132,6 +146,7 @@
                         <outlet property="bottomLabel" destination="IUU-4A-2R7" id="i89-x6-DCK"/>
                         <outlet property="bottomSlider" destination="fEX-OL-Aeh" id="knO-4Q-GQN"/>
                         <outlet property="currentValue" destination="V1C-sM-qSW" id="1pY-1L-bwn"/>
+                        <outlet property="noVibrationSlider" destination="hMw-jM-qtm" id="gfg-UD-k9s"/>
                         <outlet property="slider" destination="aqj-Z3-Grq" id="JhH-79-bvc"/>
                         <outlet property="textLabel" destination="tMh-am-7oY" id="QsH-bU-iWk"/>
                         <outlet property="valueLabel" destination="QdP-Pk-Y9t" id="N6S-F8-FXs"/>
